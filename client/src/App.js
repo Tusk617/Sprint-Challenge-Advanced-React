@@ -23,10 +23,18 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
+  handleSearch = (searchInput) => {
+    this.setState({
+      players: this.state.players.filter(item => item.name.toLowerCase().includes(searchInput.search))
+    })
+  }
+
   render(){
   return (
     <div className="App">
-      <PlayerSearch />
+      <PlayerSearch 
+        handleSearch = {this.handleSearch}
+      />
       {this.state.players.map(item => <PlayerCards item={item} />)}
     </div>
   );
