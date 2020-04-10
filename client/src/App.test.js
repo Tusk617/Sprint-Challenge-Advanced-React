@@ -9,10 +9,8 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-// test('App is rendering to screen', () => {
-//   const { getByTestId } = render(<App />);
+test('Site header should be in document', () => {
+  const {getByTestId} = render(<App />)
 
-//   const appClass = getByTestId("App");
-
-//   expect(appClass).toBeInTheDocument();
-// })
+  const header = getByTestId(/listHeader/i);
+})

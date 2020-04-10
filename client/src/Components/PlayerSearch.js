@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "../Hooks/useForm";
+import "./PlayerSearch.css"
 
 export function PlayerSearch(props) {
 
@@ -19,9 +20,10 @@ export function PlayerSearch(props) {
                 onChange={handleChange}
                 value={form.search}
                 placeholder="Player Search"
+                className="searchField"
             />
             </label>
-            <input type="submit"/>
+            <input type="submit" placeholder="submitButton" className="submitButton"/>
         </form>
     )
 }

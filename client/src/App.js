@@ -32,6 +32,7 @@ class App extends React.Component {
   render(){
   return (
     <div className="App" data-testid="App">
+      <h1 data-testid="listHeader">Womens World Cup</h1>
       <PlayerSearch 
         handleSearch = {this.handleSearch}
       />
