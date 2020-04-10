@@ -31,7 +31,7 @@ class App extends React.Component {
 
   render(){
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <PlayerSearch 
         handleSearch = {this.handleSearch}
       />
