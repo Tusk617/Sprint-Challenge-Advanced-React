@@ -13,7 +13,7 @@ export function PlayerSearch(props) {
     return(
         <form onSubmit={submitHandler}>
             <label id="search" htmlFor="search">
-                Search: 
+                Search for player
             <input 
                 name="search"
                 onChange={handleChange}
