@@ -4,6 +4,7 @@ import './App.css';
 
 //componenet imports
 import {PlayerCards} from "./Components/PlayeyCards";
+import {PlayerSearch} from "./Components/PlayerSearch";
 
 class App extends React.Component {
   constructor(){
@@ -25,6 +26,7 @@ class App extends React.Component {
   render(){
   return (
     <div className="App">
+      <PlayerSearch />
       {this.state.players.map(item => <PlayerCards item={item} />)}
     </div>
   );
